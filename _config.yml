@@ -1,6 +1,6 @@
 title: ZeroGhostSec
 description: AI-powered pentesting for SaaS startups
-baseurl: ""        # leave blank since it’s root
+baseurl: "baseurl: "/ghostie.in""        # leave blank since it’s root
 url: "https://ghostie.in"
 theme: minima      # or any Jekyll theme you prefer
 plugins:
