@@ -1,0 +1,48 @@
+/* Base styles */
+body {
+  margin: 0; padding: 0;
+  background: #000;
+  color: #39FF14;
+  font-family: 'Roboto Mono', monospace;
+}
+a {
+  color: #39FF14;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+header, footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Logo styling */
+.logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Glitch keyframes */
+@keyframes glitch {
+  0% { clip: rect(10px, 9999px, 45px, 0); transform: translate(0); }
+  20% { clip: rect(80px, 9999px, 140px, 0); transform: translate(-2px, -2px); }
+  40% { clip: rect(50px, 9999px, 90px, 0); transform: translate(2px, 2px); }
+  60% { clip: rect(30px, 9999px, 70px, 0); transform: translate(-2px, 2px); }
+  80% { clip: rect(90px, 9999px, 140px, 0); transform: translate(2px, -2px); }
+  100% { clip: rect(10px, 9999px, 45px, 0); transform: translate(0); }
+}
+
+/* Glitch effect class */
+.glitch {
+  position: relative;
+  display: inline-block;
+  animation: glitch 1s infinite;
+}
+
+/* Optionally apply to headings */
+/* Uncomment to glitchify headings or nav links */
+/*
+h1, h2, .logo, .site-header nav a {
+  animation: glitch 800ms infinite;
+}
+*/
